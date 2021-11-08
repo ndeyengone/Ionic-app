@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Créer salle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Numero de salle</ion-label>
+      <ion-input color="light" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Niveau de la salle</ion-label>
+      <ion-input color="light" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Nom du batiment</ion-label>
+      <ion-input color="light" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/creer-reunion']"  type="submit" color="tertiary" expand="block" shape="round">Création de la salle</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button [routerLink]="['/ajouter=employe']"  type="submit" color="tertiary" expand="block" shape="round">Ajouter un employé</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button [routerLink]="['modifier-profil']"  type="submit" color="tertiary" expand="block" shape="round">Modifier son profil</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

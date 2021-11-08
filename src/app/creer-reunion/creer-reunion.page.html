@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Créer réunion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Titre</ion-label>
+      <ion-input color="light" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Date</ion-label>
+      <ion-datetime color="light" displayFormat="DD-MMM-YYYY" required></ion-datetime>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Heure de debut</ion-label>
+      <ion-datetime color="light" displayFormat="hh-mm-A" required></ion-datetime>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Heure de fin</ion-label>
+      <ion-datetime  displayFormat="hh-mm-A"  required></ion-datetime>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Salle</ion-label>
+      <ion-input color="light" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="tertiary" expand="block" shape="round">Création de la réunion</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

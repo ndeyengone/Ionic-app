@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Modification profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label color="light" placeholder="Ndeye" position="floating">Prénom</ion-label>
+      <ion-input color="light" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" placeholder="Ndiaye" position="floating">Nom</ion-label>
+      <ion-input color="light" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" placeholder="ndeyengonendiaye@esp.sn" position="floating">Email</ion-label>
+      <ion-input color="light" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" placeholder="12345" position="floating">Mot de passe</ion-label>
+      <ion-input color="light" type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" placeholder="Participant" position="floating">Profil</ion-label>
+        <ion-select required>
+          <ion-select-option value="Participant">Participant</ion-select-option>
+          <ion-select-option value="Agent">Agent</ion-select-option>
+          <ion-select-option value="Employe">Employé</ion-select-option>
+          <ion-select-option value="Admin">Administrateur</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/home']" type="submit" color="tertiary" expand="block">Envoyer</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ajouter employé</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Prénom</ion-label>
+      <ion-input color="light" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Nom</ion-label>
+      <ion-input color="light" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Email</ion-label>
+      <ion-input color="light" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label color="light" position="floating">Matricule</ion-label>
+      <ion-input color="light" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/creer-salle']" type="submit" color="tertiary" expand="block" shape="round">Inscription</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
